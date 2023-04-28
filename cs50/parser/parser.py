@@ -95,7 +95,6 @@ def np_chunk(tree):
         if subtree.label() == "NP":
             if not any(subtree.subtrees(lambda t: t.label() == "NP")):
                 noun_phrases.append(subtree)
-    print(noun_phrases)
     return noun_phrases
 
 
